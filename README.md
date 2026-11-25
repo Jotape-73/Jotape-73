@@ -5,10 +5,10 @@
   </p>
   
   <p>
-    <a href="https://www.linkedin.com/in/SEU-USUARIO-LINKEDIN" target="_blank">
+    <a href="https://www.linkedin.com/in/joao-marchi" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-141517?style=for-the-badge&logo=linkedin&logoColor=0084B8" alt="LinkedIn" />
     </a>
-    <a href="mailto:SEU-EMAIL@exemplo.com">
+    <a href="mailto:jpg.marchi0701@gmail.com">
       <img src="https://img.shields.io/badge/Email-9B5B5E?style=for-the-badge&logo=gmail&logoColor=EDE7DC" alt="Email" />
     </a>
   </p>
