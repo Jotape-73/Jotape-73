@@ -5,10 +5,10 @@
   </p>
   
   <p>
-    <a href="https://www.linkedin.com/in/SEU-USUARIO-LINKEDIN" target="_blank">
+    <a href="https://www.linkedin.com/in/joao-marchi" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-141517?style=for-the-badge&logo=linkedin&logoColor=0084B8" alt="LinkedIn" />
     </a>
-    <a href="mailto:SEU-EMAIL@exemplo.com">
+    <a href="mailto:jpg.marchi0701@gmail.com">
       <img src="https://img.shields.io/badge/Email-9B5B5E?style=for-the-badge&logo=gmail&logoColor=EDE7DC" alt="Email" />
     </a>
   </p>
@@ -72,11 +72,11 @@ Desenvolvedor Full-Stack com atuação como **Assistente de Desenvolvimento** na
 
 ---
 
-### Cenário Ilustrativo de Atuação (Dados Mockados)
+### Cenário Ilustrativo de Atuação
 
 Exemplo sanitizado e fictício baseado em fluxos operacionais de CRM e gestão de pedidos para ilustrar a dinâmica de regras de negócio:
 
-| Módulo / Fluxo | Situação Mockada | Regra Aplicada (Simulada) | Impacto Operacional (Simulado) |
+| Módulo / Fluxo | Situação | Regra Aplicada (Simulada) | Impacto Operacional (Simulado) |
 | :--- | :--- | :--- | :--- |
 | **Aprovação de Pedidos** | Itens de conectividade (Simcard, Simcard Isca, Flex e Substituição) permaneciam em Pendente após aprovação do cliente | Transição automática do status de itens elegíveis para Em Separação no evento de aprovação | Redução de etapas manuais e menor tempo até a separação logística |
 | **Rastreabilidade de Status** | Alterações manuais tardias dificultavam auditoria do ciclo do pedido | Registro padronizado de eventos e validação de estados permitidos por tipo de item | Maior previsibilidade do fluxo e redução de inconsistências operacionais |
@@ -84,9 +84,9 @@ Exemplo sanitizado e fictício baseado em fluxos operacionais de CRM e gestão d
 
 ---
 
-### Métricas no GitHub (Mock)
+### Métricas no GitHub 
 
 <div align="center">
-  <img height="190em" src="./assets/stats-mock.svg" alt="Métricas mockadas de atividade" />
-  <img height="190em" src="./assets/langs-mock.svg" alt="Distribuição mockada de stack" />
+  <img height="190em" src="./assets/stats-mock.svg" alt="Métricas de atividade" />
+  <img height="190em" src="./assets/langs-mock.svg" alt="Distribuição de stack" />
 </div>
