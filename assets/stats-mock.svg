@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="190" viewBox="0 0 460 190" role="img" aria-label="CRM & Engineering Activity (Mock)">
+  <rect x="1" y="1" width="458" height="188" rx="8" fill="#141517" stroke="#9B5B5E" stroke-width="1.5" />
+  <text x="24" y="34" fill="#0084B8" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="16" font-weight="700">CRM & Engineering Activity (Mock)</text>
+  <text x="24" y="68" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Contribuições (12m): 240 (mock/resumo)</text>
+  <text x="24" y="94" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Mix de Atividade: 84% Commits | 16% Pull Requests</text>
+  <text x="24" y="120" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Commits (Nov / CRM): 39 commits simulados</text>
+  <text x="24" y="146" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Exemplo de PR (Pedidos): +192 / -22 linhas (mock)</text>
+  <text x="24" y="172" fill="#A8A29E" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="11">Dados ilustrativos sem exposição de código privado</text>
+</svg>

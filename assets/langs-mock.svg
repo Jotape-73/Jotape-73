@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" viewBox="0 0 420 190" role="img" aria-label="Stack Distribution Mock">
+  <rect x="1" y="1" width="418" height="188" rx="8" fill="#141517" stroke="#9B5B5E" stroke-width="1.5" />
+  <text x="24" y="34" fill="#0084B8" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="16" font-weight="700">Distribuição de Stack (Mock)</text>
+  <rect x="24" y="54" width="372" height="10" rx="5" fill="#26292E" />
+  <rect x="24" y="54" width="126" height="10" fill="#0084B8" />
+  <rect x="150" y="54" width="104" height="10" fill="#9B5B5E" />
+  <rect x="254" y="54" width="67" height="10" fill="#EDE7DC" />
+  <rect x="321" y="54" width="45" height="10" fill="#5C9EAD" />
+  <rect x="366" y="54" width="30" height="10" fill="#C2847A" />
+  <circle cx="29" cy="84" r="5" fill="#0084B8" />
+  <text x="40" y="88" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">PHP / Laravel — 34%</text>
+  <circle cx="235" cy="84" r="5" fill="#9B5B5E" />
+  <text x="246" y="88" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">TypeScript / React — 28%</text>
+  <circle cx="29" cy="106" r="5" fill="#EDE7DC" />
+  <text x="40" y="110" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">SQL (MySQL / PG) — 18%</text>
+  <circle cx="235" cy="106" r="5" fill="#5C9EAD" />
+  <text x="246" y="110" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">Python — 12%</text>
+  <circle cx="29" cy="128" r="5" fill="#C2847A" />
+  <text x="40" y="132" fill="#EDE7DC" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">C / C++ / Kotlin — 8%</text>
+  <text x="24" y="172" fill="#A8A29E" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="11">Valores simulados para demonstração</text>
+</svg>
