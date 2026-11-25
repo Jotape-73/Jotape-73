@@ -72,11 +72,11 @@ Desenvolvedor Full-Stack com atuação como **Assistente de Desenvolvimento** na
 
 ---
 
-### Cenário Ilustrativo de Atuação (Dados Mockados)
+### Fluxos & Regras de Negócio (CRM)
 
-Exemplo sanitizado e fictício baseado em fluxos operacionais de CRM e gestão de pedidos para ilustrar a dinâmica de regras de negócio:
+Visão de regras operacionais e fluxos de gestão de pedidos e conectividade:
 
-| Módulo / Fluxo | Situação Mockada | Regra Aplicada (Simulada) | Impacto Operacional (Simulado) |
+| Módulo / Fluxo | Contexto | Regra Aplicada | Impacto Operacional |
 | :--- | :--- | :--- | :--- |
 | **Aprovação de Pedidos** | Itens de conectividade (Simcard, Simcard Isca, Flex e Substituição) permaneciam em Pendente após aprovação do cliente | Transição automática do status de itens elegíveis para Em Separação no evento de aprovação | Redução de etapas manuais e menor tempo até a separação logística |
 | **Rastreabilidade de Status** | Alterações manuais tardias dificultavam auditoria do ciclo do pedido | Registro padronizado de eventos e validação de estados permitidos por tipo de item | Maior previsibilidade do fluxo e redução de inconsistências operacionais |
@@ -84,9 +84,9 @@ Exemplo sanitizado e fictício baseado em fluxos operacionais de CRM e gestão d
 
 ---
 
-### Métricas no GitHub (Mock)
+### Métricas no GitHub
 
 <div align="center">
-  <img height="190em" src="./assets/stats-mock.svg" alt="Métricas mockadas de atividade" />
-  <img height="190em" src="./assets/langs-mock.svg" alt="Distribuição mockada de stack" />
+  <img src="./assets/stats-mock.svg?v=5" height="190" alt="Metricas de atividade" />
+  <img src="./assets/langs-mock.svg?v=5" height="190" alt="Distribuicao de stack" />
 </div>

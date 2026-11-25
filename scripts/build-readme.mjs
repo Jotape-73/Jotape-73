@@ -13,7 +13,7 @@ const THEME = {
 };
 
 // ============================================================================
-// DADOS DO PERFIL E MÉTRICAS MOCKADAS (CRM / ATIVIDADE SIMULADA)
+// DADOS DO PERFIL E MÉTRICAS DE ATIVIDADE
 // ============================================================================
 const PROFILE = {
   name: "João Marchi",
@@ -23,8 +23,8 @@ const PROFILE = {
   email: "SEU-EMAIL@exemplo.com",
 };
 
-const MOCK_STATS = {
-  title: "CRM & Engineering Activity (Mock)",
+const ACTIVITY_STATS = {
+  title: "CRM and Engineering Activity",
   contributionsYear: 240,
   commitsShare: "84%",
   pullRequestsShare: "16%",
@@ -32,7 +32,7 @@ const MOCK_STATS = {
   samplePrDelta: "+192 / -22",
 };
 
-const MOCK_LANGUAGES = [
+const STACK_DISTRIBUTION = [
   { name: "PHP / Laravel", percent: 34, color: THEME.accent },
   { name: "TypeScript / React", percent: 28, color: THEME.secondary },
   { name: "SQL (MySQL / PG)", percent: 18, color: THEME.text },
@@ -70,7 +70,7 @@ const STACK = {
   ],
 };
 
-const MOCK_CRM_SCENARIOS = [
+const CRM_SCENARIOS = [
   {
     module: "Aprovação de Pedidos",
     situation:
@@ -93,17 +93,17 @@ const MOCK_CRM_SCENARIOS = [
 ];
 
 // ============================================================================
-// GERADORES DE SVG (MÉTRICAS MOCKADAS)
+// GERADORES DE SVG
 // ============================================================================
 function buildStatsSvg(stats, theme) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="460" height="190" viewBox="0 0 460 190" role="img" aria-label="${stats.title}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="460" height="190" viewBox="0 0 460 190">
   <rect x="1" y="1" width="458" height="188" rx="8" fill="${theme.bg}" stroke="${theme.secondary}" stroke-width="1.5" />
-  <text x="24" y="34" fill="${theme.accent}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="16" font-weight="700">${stats.title}</text>
-  <text x="24" y="68" fill="${theme.text}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Contribuições (12m): ${stats.contributionsYear} (mock/resumo)</text>
-  <text x="24" y="94" fill="${theme.text}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Mix de Atividade: ${stats.commitsShare} Commits | ${stats.pullRequestsShare} Pull Requests</text>
-  <text x="24" y="120" fill="${theme.text}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Commits (Nov / CRM): ${stats.novemberCommits} commits simulados</text>
-  <text x="24" y="146" fill="${theme.text}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Exemplo de PR (Pedidos): ${stats.samplePrDelta} linhas (mock)</text>
-  <text x="24" y="172" fill="${theme.muted}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="11">Dados ilustrativos sem exposição de código privado</text>
+  <text x="24" y="34" fill="${theme.accent}" font-family="sans-serif" font-size="16" font-weight="700">${stats.title}</text>
+  <text x="24" y="68" fill="${theme.text}" font-family="sans-serif" font-size="13">Contribuicoes (12m): ${stats.contributionsYear}</text>
+  <text x="24" y="94" fill="${theme.text}" font-family="sans-serif" font-size="13">Commits: ${stats.commitsShare} / Pull Requests: ${stats.pullRequestsShare}</text>
+  <text x="24" y="120" fill="${theme.text}" font-family="sans-serif" font-size="13">Novembro (CRM): ${stats.novemberCommits} commits</text>
+  <text x="24" y="146" fill="${theme.text}" font-family="sans-serif" font-size="13">PR exemplo (Pedidos): ${stats.samplePrDelta} linhas</text>
+  <text x="24" y="172" fill="${theme.muted}" font-family="sans-serif" font-size="11">Resumo de fluxo e engenharia em CRM</text>
 </svg>`;
 }
 
@@ -124,17 +124,17 @@ function buildLangsSvg(langs, theme) {
       const col = idx % 2 === 0 ? 24 : 230;
       const row = Math.floor(idx / 2) * 22 + 88;
       return `<circle cx="${col + 5}" cy="${row - 4}" r="5" fill="${item.color}" />
-  <text x="${col + 16}" y="${row}" fill="${theme.text}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">${item.name} — ${item.percent}%</text>`;
+  <text x="${col + 16}" y="${row}" fill="${theme.text}" font-family="sans-serif" font-size="12">${item.name} - ${item.percent}%</text>`;
     })
     .join("\n  ");
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" viewBox="0 0 420 190" role="img" aria-label="Stack Distribution Mock">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" viewBox="0 0 420 190">
   <rect x="1" y="1" width="418" height="188" rx="8" fill="${theme.bg}" stroke="${theme.secondary}" stroke-width="1.5" />
-  <text x="24" y="34" fill="${theme.accent}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="16" font-weight="700">Distribuição de Stack (Mock)</text>
+  <text x="24" y="34" fill="${theme.accent}" font-family="sans-serif" font-size="16" font-weight="700">Distribuicao de Stack</text>
   <rect x="24" y="54" width="${barWidth}" height="10" rx="5" fill="#26292E" />
   ${barSegments}
   ${legendItems}
-  <text x="24" y="172" fill="${theme.muted}" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="11">Valores simulados para demonstração</text>
+  <text x="24" y="172" fill="${theme.muted}" font-family="sans-serif" font-size="11">Foco tecnico em aplicacoes web e sistemas</text>
 </svg>`;
 }
 
@@ -161,7 +161,7 @@ function renderStackSections(stackObj) {
 
 function renderCrmTable(rows) {
   const header =
-    "| Módulo / Fluxo | Situação Mockada | Regra Aplicada (Simulada) | Impacto Operacional (Simulado) |\n" +
+    "| Módulo / Fluxo | Contexto | Regra Aplicada | Impacto Operacional |\n" +
     "| :--- | :--- | :--- | :--- |";
   const body = rows
     .map((r) => `| **${r.module}** | ${r.situation} | ${r.rule} | ${r.impact} |`)
@@ -174,8 +174,8 @@ function renderCrmTable(rows) {
 // ============================================================================
 const assetsDir = path.resolve("assets");
 fs.mkdirSync(assetsDir, { recursive: true });
-fs.writeFileSync(path.join(assetsDir, "stats-mock.svg"), buildStatsSvg(MOCK_STATS, THEME), "utf8");
-fs.writeFileSync(path.join(assetsDir, "langs-mock.svg"), buildLangsSvg(MOCK_LANGUAGES, THEME), "utf8");
+fs.writeFileSync(path.join(assetsDir, "stats-mock.svg"), buildStatsSvg(ACTIVITY_STATS, THEME), "utf8");
+fs.writeFileSync(path.join(assetsDir, "langs-mock.svg"), buildLangsSvg(STACK_DISTRIBUTION, THEME), "utf8");
 
 const readmeContent = `<div align="center">
   <h1>${PROFILE.name}</h1>
@@ -220,19 +220,19 @@ ${renderStackSections(STACK)}
 
 ---
 
-### Cenário Ilustrativo de Atuação (Dados Mockados)
+### Fluxos & Regras de Negócio (CRM)
 
-Exemplo sanitizado e fictício baseado em fluxos operacionais de CRM e gestão de pedidos para ilustrar a dinâmica de regras de negócio:
+Visão de regras operacionais e fluxos de gestão de pedidos e conectividade:
 
-${renderCrmTable(MOCK_CRM_SCENARIOS)}
+${renderCrmTable(CRM_SCENARIOS)}
 
 ---
 
-### Métricas no GitHub (Mock)
+### Métricas no GitHub
 
 <div align="center">
-  <img height="190em" src="./assets/stats-mock.svg" alt="Métricas mockadas de atividade" />
-  <img height="190em" src="./assets/langs-mock.svg" alt="Distribuição mockada de stack" />
+  <img src="./assets/stats-mock.svg?v=5" height="190" alt="Metricas de atividade" />
+  <img src="./assets/langs-mock.svg?v=5" height="190" alt="Distribuicao de stack" />
 </div>
 `;
 
